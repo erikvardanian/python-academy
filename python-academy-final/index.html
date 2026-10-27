@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="hy">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#111528" name="theme-color"/>
+<meta content="Python Academy — սովորի՛ր Python-ը խաղալով, փորձելով ու ստեղծելով։" name="description"/>
+<title>Python Academy</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;family=Noto+Sans+Armenian:wght@400;500;600;700;800;900&amp;family=Noto+Serif+Armenian:wght@500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css?v=refined-fonts-20261024" rel="stylesheet"/>
+</head>
+<body>
+<div id="app">
+<header class="topbar">
+<a aria-label="Python Academy — գլխավոր էջ" class="brand" href="#home">
+<span class="brand-wordmark" aria-hidden="true"><span class="brand-wordmark-top">PYTHON</span><span class="brand-wordmark-bottom">ACADEMY</span></span>
+</a>
+<nav aria-label="Լրացուցիչ բաժիններ" id="nav"><a data-nav="home" href="#home">Գլխավոր էջ</a><a data-nav="lessons" href="#lessons">Տեսական նյութեր</a><a data-nav="flashcards" href="#flashcards">Ֆլեշքարտեր</a><a data-nav="playground" href="#playground">Գործնական խնդիրներ</a><a data-nav="quizzes" href="#quizzes">Թեստեր</a><a data-nav="drag" href="#drag">Դասավորի՛ր կոդը</a><a data-nav="bugs" href="#bugs">Գտի՛ր սխալը</a><a data-nav="roadmap" href="#roadmap">Ճանապարհային քարտեզ</a></nav>
+<div aria-label="Հիմնական բաժիններ" class="primary-links">
+<a data-nav="home" href="#home">
+      Գլխավոր էջ
+     </a>
+<div class="lessons-nav"><button aria-controls="lessonsDropdown" aria-expanded="false" class="lessons-nav-toggle" id="lessonsNavToggle" type="button">Դասեր <span aria-hidden="true"><i data-lucide="chevron-down" aria-hidden="true"></i></span></button><div class="lessons-dropdown" hidden="" id="lessonsDropdown"><a data-nav="lessons" href="#lessons">Տեսական նյութեր</a><a data-nav="flashcards" href="#flashcards">Ֆլեշքարտեր</a></div></div>
+<div class="problems-nav"><button aria-controls="problemsDropdown" aria-expanded="false" class="problems-nav-toggle" id="problemsNavToggle" type="button">Առաջադրանքներ <span aria-hidden="true"><i data-lucide="chevron-down" aria-hidden="true"></i></span></button><div class="problems-dropdown" hidden="" id="problemsDropdown"><a data-nav="playground" href="#playground">Գործնական խնդիրներ</a><a data-nav="quizzes" href="#quizzes">Թեստեր</a><a data-nav="drag" href="#drag">Դասավորի՛ր կոդը</a><a data-nav="bugs" href="#bugs">Գտի՛ր սխալը</a></div></div>
+<a data-nav="roadmap" href="#roadmap">Ճանապարհային քարտեզ</a>
+</div>
+<div class="header-actions">
+<span class="xp-pill" id="xpHeader">
+      0 XP
+     </span>
+<button aria-label="Փոխել թեման" class="icon-btn" id="themeBtn">
+      <i data-lucide="moon" aria-hidden="true"></i>
+     </button>
+
+</div>
+</header>
+<main id="view">
+</main>
+<div aria-live="polite" id="toast" role="status">
+</div>
+<div id="foxDock">
+<div id="foxXpBubble" class="fox-xp-bubble" role="status" aria-live="polite"></div>
+<div class="chat-window hidden" id="chatWindow">
+<div class="chat-head">
+<img alt="Fox Assistant" src="assets/fox-avatar-ear-safe.png?v=ears-full-20261024"/>
+<div>
+<b>
+        Mr. Fox
+       </b>
+<small>
+        Քո օգնականը դժվար պահերին
+       </small>
+</div>
+<button aria-label="Փակել" id="closeChat">
+       <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+</div>
+<div class="chat-messages" id="chatMessages">
+<div class="bubble fox-bubble">
+       Հե՜յ, ուրախ եմ քեզ տեսնել։ Ընտրի՛ր քեզ հետաքրքրող հարցը, և ես սիրով կօգնեմ քեզ։
+      </div>
+</div>
+<div class="chat-options" id="chatOptions">
+</div>
+</div>
+<button aria-label="Բացել աղվեսի օգնականը" id="foxToggle">
+<img alt="Fox Assistant" src="assets/fox-dock.png"/>
+<span class="fox-ping">
+</span>
+</button>
+</div>
+</div>
+<script defer="" src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js">
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js">
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/pyodide@0.27.7/pyodide.js">
+</script>
+<script defer="" src="app.js?v=fox-outside-click-20261024">
+</script>
+</body>
+</html>

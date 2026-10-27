@@ -1,0 +1,183 @@
+{
+  "1.1": [
+    "print(\"Hello, World!\")",
+    "print(\"Անի\")\nprint(14)\nprint(\"Նկարչություն\")",
+    "print(\"Monday\")\nprint(\"Tuesday\")\nprint(\"Wednesday\")\nprint(\"Thursday\")\nprint(\"Friday\")"
+  ],
+  "1.2": [
+    "print(25 + 7)\nprint(25 - 7)\nprint(25 * 7)",
+    "print(15 + 5)\nprint(\"15 + 5\")",
+    "print(\"Book\", 2500, \"AMD\", sep=\" | \")",
+    "print(\"Python\", end=\" \")\nprint(\"is\", end=\" \")\nprint(\"awesome!\")",
+    "print(2 * (12 + 8))",
+    "# Calculate the area of the square\nprint(6 * 6)\n# Calculate the perimeter of the square\nprint(4 * 6)",
+    "print(\"Name: Alex\\nAge: 14\\nCity: Yerevan\")"
+  ],
+  "1.3": [
+    "name = \"Ani\"\nage = 14\ngrade = 9\nprint(name, age, grade)",
+    "a = 18\nb = 7\nprint(a + b, a - b, a * b)",
+    "age = 13\nage += 1\nprint(age)",
+    "price = 750\nquantity = 4\nprint(price * quantity)",
+    "a = 15\nb = 2.5\nc = \"Python\"\nd = True\nprint(type(a), type(b), type(c), type(d))",
+    "a = 10\nb = 20\na, b = b, a\nprint(a, b)",
+    "score = 120\nscore += 35\nscore -= 20\nprint(score)"
+  ],
+  "1.4": [
+    "name = input(\"Name: \")\nprint(f\"Hello, {name}!\")",
+    "a = int(input())\nb = int(input())\nprint(a + b)",
+    "length = float(input())\nwidth = float(input())\nprint(length * width)",
+    "age = int(input())\nprint(age + 1)",
+    "c = float(input())\nf = c * 1.8 + 32\nprint(f)",
+    "price = float(input())\nquantity = int(input())\nprint(f\"Total: {price * quantity:g} AMD\")",
+    "seconds = int(input())\nprint(seconds // 60, \"minutes\", seconds % 60, \"seconds\")",
+    "a = float(input())\nb = float(input())\nc = float(input())\nprint(f\"{(a + b + c) / 3:.2f}\")"
+  ],
+  "1.5": [
+    "a = float(input())\nb = float(input())\nprint(a + b, a - b, a * b, a / b)",
+    "a = int(input())\nb = int(input())\nprint(a // b, a % b)",
+    "n = int(input())\nprint(n % 10)",
+    "n = int(input())\nprint(n // 10)\nprint(n % 10)",
+    "n = int(input())\nprint(n // 100 + (n // 10) % 10 + n % 10)",
+    "n = int(input())\nprint(n % 2 == 0)",
+    "n = float(input())\nprint(10 <= n <= 100)",
+    "price = float(input())\ndiscount = float(input())\nprint(price * (1 - discount / 100))",
+    "minutes = int(input())\nprint(minutes // 60, minutes % 60)",
+    "n = int(input())\nreversed_number = (n % 10) * 100 + ((n // 10) % 10) * 10 + n // 100\nprint(reversed_number)"
+  ],
+  "2.1": [
+    "n = int(input())\nif n > 0:\n    print(\"Positive\")\nelif n < 0:\n    print(\"Negative\")\nelse:\n    print(\"Zero\")",
+    "n = int(input())\nprint(\"Even\" if n % 2 == 0 else \"Odd\")",
+    "a = float(input())\nb = float(input())\nif a == b:\n    print(\"Equal\")\nelse:\n    print(a if a > b else b)",
+    "a = float(input())\nb = float(input())\nc = float(input())\nbiggest = a\nif b > biggest:\n    biggest = b\nif c > biggest:\n    biggest = c\nprint(biggest)",
+    "score = int(input())\nif 90 <= score <= 100:\n    print(\"Excellent\")\nelif 70 <= score < 90:\n    print(\"Good\")\nelif 50 <= score < 70:\n    print(\"Satisfactory\")\nelif 0 <= score < 50:\n    print(\"Fail\")\nelse:\n    print(\"Invalid score\")",
+    "age = int(input())\nprint(\"Access granted\" if age >= 16 else \"Access denied\")",
+    "year = int(input())\nleap = year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)\nprint(\"Leap year\" if leap else \"Not leap year\")",
+    "a = float(input())\nb = float(input())\nc = float(input())\nprint(a + b > c and a + c > b and b + c > a)",
+    "a = float(input())\nb = float(input())\nop = input()\nif op == \"+\":\n    print(a + b)\nelif op == \"-\":\n    print(a - b)\nelif op == \"*\":\n    print(a * b)\nelif op == \"/\":\n    print(a / b if b != 0 else \"Cannot divide by zero\")\nelse:\n    print(\"Unknown operation\")",
+    "age = int(input())\nif age < 7:\n    print(0)\nelif age < 18:\n    print(1000)\nelse:\n    print(2000)"
+  ],
+  "2.2": [
+    "i = 1\nwhile i <= 20:\n    print(i)\n    i += 1",
+    "n = int(input())\nwhile n >= 1:\n    print(n)\n    n -= 1",
+    "n = int(input())\ni = 1\ntotal = 0\nwhile i <= n:\n    total += i\n    i += 1\nprint(total)",
+    "n = int(input())\ni = 2\nwhile i <= n:\n    print(i)\n    i += 2",
+    "n = int(input())\ni = 1\nwhile i <= 10:\n    print(f\"{n} x {i} = {n * i}\")\n    i += 1",
+    "n = int(input())\ncount = 0\nwhile n > 0:\n    count += 1\n    n //= 10\nprint(count)",
+    "n = int(input())\ntotal = 0\nwhile n > 0:\n    total += n % 10\n    n //= 10\nprint(total)",
+    "n = int(input())\nresult = 0\nwhile n > 0:\n    result = result * 10 + n % 10\n    n //= 10\nprint(result)",
+    "password = input(\"Password: \")\nwhile password != \"python123\":\n    password = input(\"Password: \")\nprint(\"Access granted\")",
+    "total = 0\nwhile True:\n    n = int(input())\n    if n == 0:\n        break\n    total += n\nprint(total)"
+  ],
+  "2.3": [
+    "for i in range(1, 51):\n    print(i)",
+    "for i in range(1, 100, 2):\n    print(i)",
+    "for i in range(20, 0, -1):\n    print(i)",
+    "n = int(input())\nfor i in range(1, n + 1):\n    print(i, i * i)",
+    "n = int(input())\ntotal = 0\nfor i in range(1, n + 1):\n    total += i\nprint(total)",
+    "n = int(input())\nfactorial = 1\nfor i in range(2, n + 1):\n    factorial *= i\nprint(factorial)",
+    "n = int(input())\nfor i in range(1, n + 1):\n    if i % 3 == 0 and i % 5 == 0:\n        print(i)",
+    "word = input()\nfor char in word:\n    print(char)",
+    "word = input().lower()\ncount = 0\nfor char in word:\n    if char in \"aeiou\":\n        count += 1\nprint(count)",
+    "n = int(input())\na, b = 0, 1\nfor _ in range(n):\n    print(a)\n    a, b = b, a + b"
+  ],
+  "2.4": [
+    "n = int(input())\nfor i in range(1, n + 1):\n    if i % 7 == 0:\n        print(i)\n        break",
+    "for i in range(1, 31):\n    if i % 3 == 0:\n        continue\n    print(i)",
+    "while True:\n    n = int(input())\n    if n <= 0:\n        continue\n    break\nprint(n)",
+    "total = 0\nfor _ in range(10):\n    n = int(input())\n    if n < 0:\n        continue\n    total += n\nprint(total)",
+    "rows = int(input())\ncols = int(input())\nfor _ in range(rows):\n    for _ in range(cols):\n        print(\"*\", end=\"\")\n    print()",
+    "for i in range(1, 11):\n    for j in range(1, 11):\n        print(f\"{i*j:4}\", end=\"\")\n    print()",
+    "n = int(input())\nfor value in range(2, n + 1):\n    prime = True\n    for divisor in range(2, value):\n        if value % divisor == 0:\n            prime = False\n            break\n    if prime:\n        print(value)",
+    "for attempt in range(3):\n    if input(\"Password: \") == \"python123\":\n        print(\"Access granted\")\n        break\nelse:\n    print(\"Account locked\")"
+  ],
+  "3.1": [
+    "text = input()\nprint(len(text))",
+    "word = input()\nprint(word[0], word[-1])",
+    "text = input()\nprint(text.upper())\nprint(text.lower())",
+    "word = input()\nprint(word[::-1])",
+    "sentence = input().lower()\nword = input().lower()\nprint(word in sentence)",
+    "text = input().lower()\nfor vowel in \"aeiou\":\n    print(vowel, text.count(vowel))",
+    "word = input().lower()\nprint(word == word[::-1])",
+    "sentence = input()\nprint(len(sentence.split()))",
+    "email = input()\nvalid = email.count(\"@\") == 1 and \".\" in email.split(\"@\")[1]\nprint(\"Valid format\" if valid else \"Invalid format\")"
+  ],
+  "3.2": [
+    "grades = [8, 9, 10, 7, 9]\nfor grade in grades:\n    print(grade)",
+    "numbers = [3, 5, 7, 9, 11]\nnumbers[0] = 100\nnumbers[-1] = 0\nprint(numbers)",
+    "fruits = [\"apple\", \"pear\", \"banana\"]\nfruits.append(\"orange\")\nfruits.append(\"peach\")\nprint(fruits)",
+    "numbers = [4, 6, 8, 10, 12]\nprint(sum(numbers))\nprint(sum(numbers) / len(numbers))",
+    "numbers = []\nfor _ in range(5):\n    numbers.append(int(input()))\nprint(max(numbers), min(numbers))",
+    "numbers = [2, 7, 8, 11, 14]\ncount = 0\nfor n in numbers:\n    if n % 2 == 0:\n        count += 1\nprint(count)",
+    "numbers = [-2, 3, 0, 5, -1, 8]\npositive = [n for n in numbers if n > 0]\nprint(positive)",
+    "numbers = [3, 1, 3, 2, 1, 4]\nunique = []\nfor n in numbers:\n    if n not in unique:\n        unique.append(n)\nprint(unique)",
+    "numbers = list(map(int, input().split()))\ndistinct = sorted(set(numbers), reverse=True)\nprint(distinct[1])",
+    "numbers = [2, 4, 6, 8]\nprint(numbers[::-1])"
+  ],
+  "3.3": [
+    "numbers = (3, 5, 7, 9, 11)\nprint(len(numbers), numbers[0], numbers[-1])",
+    "numbers = (5, 1, 5, 2, 5, 3)\nprint(numbers.count(5))",
+    "student = {\"name\": \"Ani\", \"age\": 14, \"grade\": 9}\nfor key, value in student.items():\n    print(key, value)",
+    "product = {\"name\": \"Book\", \"price\": 2500}\nproduct[\"price\"] = 3000\nprint(product)",
+    "grades = {\"math\": 9, \"english\": 8, \"science\": 10}\nprint(sum(grades.values()) / len(grades))",
+    "prices = {\"apple\": 300, \"bread\": 500, \"milk\": 700}\nname = input()\nprint(prices.get(name, \"Product not found\"))",
+    "sentence = input().lower()\ncounts = {}\nfor word in sentence.split():\n    counts[word] = counts.get(word, 0) + 1\nprint(counts)",
+    "grades = {\"Ani\": 9, \"Aram\": 8, \"Nare\": 10}\nname = max(grades, key=grades.get)\nprint(name, grades[name])"
+  ],
+  "4.1": [
+    "def greet():\n    print(\"Welcome to Python Academy!\")\nfor _ in range(3):\n    greet()",
+    "def greet(name):\n    print(f\"Hello, {name}!\")\ngreet(\"Ani\")",
+    "def add(a, b):\n    return a + b\nprint(add(4, 6))\nprint(add(10, 20))",
+    "def square(n):\n    return n * n\nprint(square(5))",
+    "def is_even(n):\n    return n % 2 == 0\nprint(is_even(8))",
+    "def maximum(a, b, c):\n    biggest = a\n    if b > biggest:\n        biggest = b\n    if c > biggest:\n        biggest = c\n    return biggest\nprint(maximum(3, 8, 5))",
+    "def rectangle_area(length, width):\n    return length * width\nprint(rectangle_area(4, 7))",
+    "def power(base, exponent=2):\n    return base ** exponent\nprint(power(5))\nprint(power(2, 3))",
+    "def digit_sum(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n //= 10\n    return total\nprint(digit_sum(123))",
+    "def is_prime(n):\n    if n < 2:\n        return False\n    for d in range(2, int(n ** 0.5) + 1):\n        if n % d == 0:\n            return False\n    return True\nprint(is_prime(17))"
+  ],
+  "4.2": [
+    "n = int(input())\nprint(abs(n))",
+    "n = float(input())\nprint(round(n, 2))",
+    "numbers = [5, 2, 9, 1, 7]\nprint(len(numbers), sum(numbers), min(numbers), max(numbers))",
+    "import math\nn = float(input())\nprint(math.sqrt(n))",
+    "import math\nr = float(input())\nprint(math.pi * r ** 2)",
+    "import random\nprint(random.randint(1, 6))",
+    "import random\na = random.randint(1, 6)\nb = random.randint(1, 6)\nprint(a, b, a + b)",
+    "import random\nimport string\nalphabet = string.ascii_lowercase + string.digits\nresult = \"\".join(random.choice(alphabet) for _ in range(8))\nprint(result)",
+    "import random\nstudents = [\"Ani\", \"Aram\", \"Nare\", \"David\", \"Mariam\"]\nprint(random.choice(students))",
+    "import math\nn = float(input())\nprint(math.floor(n), math.ceil(n))"
+  ],
+  "4.3": [
+    "try:\n    n = int(input())\n    print(n)\nexcept ValueError:\n    print(\"Invalid number\")",
+    "try:\n    a = float(input())\n    b = float(input())\n    print(a / b)\nexcept ValueError:\n    print(\"Invalid number\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")",
+    "items = [10, 20, 30, 40, 50]\ntry:\n    index = int(input())\n    print(items[index] if 0 <= index < len(items) else \"Index out of range\")\nexcept ValueError:\n    print(\"Invalid index\")",
+    "prices = {\"apple\": 300, \"milk\": 700}\ntry:\n    print(prices[input()])\nexcept KeyError:\n    print(\"Product not found\")",
+    "while True:\n    try:\n        n = int(input())\n        print(n)\n        break\n    except ValueError:\n        print(\"Invalid number, try again\")",
+    "import math\ntry:\n    n = float(input())\n    print(math.sqrt(n))\nexcept ValueError:\n    print(\"Invalid number or negative value\")",
+    "try:\n    a = int(input())\n    b = int(input())\n    print(a / b)\nexcept ValueError:\n    print(\"Invalid number\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")",
+    "try:\n    with open(\"data.txt\", \"r\") as file:\n        print(file.read())\nexcept FileNotFoundError:\n    print(\"File not found\")",
+    "def average(numbers):\n    if not numbers:\n        return None\n    return sum(numbers) / len(numbers)\nprint(average([4, 6, 8]))\nprint(average([]))"
+  ],
+  "5.1": [
+    "n = int(input())\nnumbers = [int(input()) for _ in range(n)]\nprint(sum(numbers))\nprint(sum(numbers) / n)",
+    "n = int(input())\npositive = negative = zero = 0\nfor _ in range(n):\n    x = int(input())\n    if x > 0:\n        positive += 1\n    elif x < 0:\n        negative += 1\n    else:\n        zero += 1\nprint(positive, negative, zero)",
+    "n = int(input())\nfirst = int(input())\nbiggest = smallest = first\nfor _ in range(n - 1):\n    x = int(input())\n    if x > biggest:\n        biggest = x\n    if x < smallest:\n        smallest = x\nprint(biggest, smallest)",
+    "n = int(input())\nif n == 0:\n    print(0, 0)\nelse:\n    total = 0\n    product = 1\n    while n > 0:\n        digit = n % 10\n        total += digit\n        product *= digit\n        n //= 10\n    print(total, product)",
+    "n = int(input())\ncount = 0\nfor value in range(2, n + 1):\n    prime = True\n    for d in range(2, int(value ** 0.5) + 1):\n        if value % d == 0:\n            prime = False\n            break\n    if prime:\n        count += 1\nprint(count)",
+    "n = int(input())\ntotal = 0\nfor d in range(1, n):\n    if n % d == 0:\n        total += d\nprint(total == n)",
+    "a = int(input())\nb = int(input())\nx, y = a, b\nwhile y != 0:\n    x, y = y, x % y\nprint(a * b // x)",
+    "n = int(input())\noriginal = n\nreversed_number = 0\nwhile n > 0:\n    reversed_number = reversed_number * 10 + n % 10\n    n //= 10\nprint(original == reversed_number)"
+  ],
+  "5.2": [
+    "n = int(input())\nnumbers = [int(input()) for _ in range(n)]\ntarget = int(input())\nindex = -1\nfor i in range(n):\n    if numbers[i] == target:\n        index = i\n        break\nprint(index)",
+    "numbers = list(map(int, input().split()))\ntarget = int(input())\ncount = 0\nfor n in numbers:\n    if n == target:\n        count += 1\nprint(count)",
+    "numbers = list(map(int, input().split()))\ntarget = int(input())\nfirst = last = -1\nfor i in range(len(numbers)):\n    if numbers[i] == target:\n        if first == -1:\n            first = i\n        last = i\nprint(first, last)",
+    "numbers = list(map(int, input().split()))\ntarget = int(input())\nleft, right = 0, len(numbers) - 1\nanswer = -1\nwhile left <= right:\n    mid = (left + right) // 2\n    if numbers[mid] == target:\n        answer = mid\n        break\n    if numbers[mid] < target:\n        left = mid + 1\n    else:\n        right = mid - 1\nprint(answer)",
+    "numbers = list(map(int, input().split()))\nfor i in range(len(numbers) - 1):\n    for j in range(len(numbers) - 1 - i):\n        if numbers[j] > numbers[j + 1]:\n            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]\nprint(numbers)",
+    "numbers = list(map(int, input().split()))\nfor i in range(len(numbers) - 1):\n    for j in range(len(numbers) - 1 - i):\n        if numbers[j] < numbers[j + 1]:\n            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]\nprint(numbers)",
+    "numbers = list(map(int, input().split()))\nfor i in range(len(numbers)):\n    smallest = i\n    for j in range(i + 1, len(numbers)):\n        if numbers[j] < numbers[smallest]:\n            smallest = j\n    numbers[i], numbers[smallest] = numbers[smallest], numbers[i]\nprint(numbers)",
+    "numbers = list(map(int, input().split()))\nfor i in range(len(numbers) - 1):\n    for j in range(len(numbers) - 1 - i):\n        if numbers[j] > numbers[j + 1]:\n            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]\n    print(numbers)",
+    "a = list(map(int, input().split()))\nb = list(map(int, input().split()))\ni = j = 0\nmerged = []\nwhile i < len(a) and j < len(b):\n    if a[i] <= b[j]:\n        merged.append(a[i])\n        i += 1\n    else:\n        merged.append(b[j])\n        j += 1\nmerged.extend(a[i:])\nmerged.extend(b[j:])\nprint(merged)",
+    "numbers = list(range(1, 1001))\ndef linear_search(items, target):\n    count = 0\n    for item in items:\n        count += 1\n        if item == target:\n            return count\n    return count\n\ndef binary_search(items, target):\n    left, right = 0, len(items) - 1\n    count = 0\n    while left <= right:\n        mid = (left + right) // 2\n        count += 1\n        if items[mid] == target:\n            return count\n        if items[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return count\nprint(\"Linear comparisons:\", linear_search(numbers, 999))\nprint(\"Binary comparisons:\", binary_search(numbers, 999))"
+  ]
+}
